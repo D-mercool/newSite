@@ -3,6 +3,7 @@ body {
     background-color: #041c29;
     height:100%;
     width:100%;
+    overflow-x:hidden;
 }
 
 .wrapper {
@@ -18,6 +19,7 @@ body {
     left: 0;
     height: 180px;
     width:100%;
+    padding-bottom: 20px;
 }
 
 .icon {
@@ -157,4 +159,13 @@ body {
     .btn {
         display: none;
     }
+}
+
+.discount {
+    position: relative;
+    background-color: #031721; 
+    height: 700px;
+    width: 100%;
+    margin-left: 5%;
+    
 }
