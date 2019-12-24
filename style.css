@@ -578,7 +578,7 @@ body {
     width: 90%;
     margin: 0 auto;
     height: 60px;
-    font-family: Roboto, serif;
+    font-family: Times, serif;
     margin-bottom: 15px;
 }
 
@@ -604,6 +604,104 @@ body {
     margin-left: 20px;
     width: 90%;
 }
+
+.work-wrap {
+    margin-left: 5%;
+    position: relative;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    background: url(img/image.jpg) left 50% top 50% / cover no-repeat;
+    text-align: center;
+    display: block;
+    height: 400px;
+}
+
+.work-header {
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    margin-left: 13%;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.work-header h2 {
+    font-size: 40px;
+    box-sizing: border-box;
+    display: inline-flex;
+    text-align: left;
+    font-family: Times New Roman, Times, serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+.work-header span {
+    text-align: left;
+    margin-bottom: 50px;
+    display: inline-flex;
+    font-family: Roboto, sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-top: -35px;
+}
+
+.work-items .image {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    box-shadow: inset 0px 0px 0px 8px rgba(255, 255, 255, 0.2), 0px 0px 0px 8px rgba(231, 61, 24, 0.3);
+    background: #e73d18;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.work-items-text {
+    display: inline-flex;
+    margin-left: 5%;
+    margin-top: 0;
+}
+
+.work-items {
+    margin-top: 15px;
+    width: 110%;
+}
+
+.work-item {
+    display: inline-flex;
+    width: 25%;
+}
+
+.work-items-text p {
+    display: flex;
+    position: relative;
+    font-family: Roboto, sans-serif;
+    color: rgba(231, 61, 24, 0.17);
+    font-size: 100px;
+    width: auto;
+    min-height: 60px;
+    align-items: center;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…xsPSIjZTczZDE4IiBmaWxsLW9wYWNpdHk9IjEiIHR5cGU9InNvbGlkQ29sb3IiLz4KPC9zdmc+) left calc(50% - 17px) bottom 0px / 68px no-repeat;
+    border-radius: none;
+    font-weight: 900;
+    margin-left: -60px;
+    margin-top: -10px;
+}
+
+.work-items-text span {
+    color: #e73d18;
+    text-align: right;
+    display: flex;
+    font-family: Times New Roman, Times, serif;
+    font-size: 25px;
+}
+
+.work-desc {
+    display: flex;
+    color: white;
+}
+
+
 
 
 
