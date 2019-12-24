@@ -469,8 +469,8 @@ body {
 
 .block1 {
     padding: 30px 100px 30px 50px;
-    margin: -70px auto 0;
-    margin-left: 0;
+    margin: -70px auto;
+    margin-right: 10px;
     position: relative;
     text-align: left;
     width: 500px;
@@ -541,7 +541,7 @@ body {
     max-width: 100%;
     box-sizing: border-box;
     display: inline-block;
-    margin: 0 10% auto 5%;
+    margin: 0 auto;
     border-left: 10px solid #041c29;
 }
 
