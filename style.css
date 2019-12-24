@@ -468,12 +468,13 @@ body {
 }
 
 .block1 {
-    padding: 30px 160px 30px 50px;
+    padding: 30px 100px 30px 50px;
     margin: -70px auto 0;
+    margin-left: 0;
     position: relative;
     text-align: left;
-    width: 550px;
-    min-width: 550px;
+    width: 500px;
+    min-width: 500px;
     max-width: 100%;
     box-sizing: border-box;
     min-height: 0;
@@ -481,6 +482,7 @@ body {
     background: #052639;
     border-radius: 10px;
     margin-bottom: 60px;
+    display: inline-flex;
 }
 
 .d-item {
@@ -496,7 +498,7 @@ body {
 }
 
 
-.title {
+.title  {
     font-weight: bold;
     position: relative;
     font-family: Times New Roman, Times, serif;
@@ -532,30 +534,77 @@ body {
     font-weight: normal;
 }
 
-.block2 {
+.calc {
     position: relative;
     text-align: left;
     width: auto;
-    min-width: 550px;
     max-width: 100%;
     box-sizing: border-box;
+    display: inline-block;
+    margin: 0 10% auto 5%;
+    border-left: 10px solid #041c29;
 }
 
 .block-2-head {
     box-sizing: border-box;
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 5px;
-    margin-top: 80px;
-    font-family: Times New Roman, Times, serif;
+    font-family:Times New Roman, Times, serif;
     color: #fff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    box-shadow: inset 10px 0px 0px 0px #041c29;
     background: #031721;
     border-radius: none;
-    padding-left: 60px;
+    display: flex;
     width: auto;
+    margin-left: 20px;
 }
+
+.calc-form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: -20px auto;
+}
+
+.calc-form input {
+    font-size: 32px;
+    color: #fff;
+    background: #041c29;
+    text-align: left;
+    padding-left: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 4px solid white;
+    width: 90%;
+    margin: 0 auto;
+    height: 60px;
+    font-family: Roboto, serif;
+    margin-bottom: 15px;
+}
+
+.calc-form input:focus {
+    border-bottom: 4px solid grey;
+}
+
+.calc-form input:last-child {
+    font-family: 'PT Sans', serif;
+    text-align: right;
+    border: 0;
+    background: none;
+    color:  #e73d18;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.calc-form select {
+    font-size: 22px;
+    color: #fff;
+    background: #041c29; 
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 90%;
+}
+
 
 
 @media (max-width: 640px) {
@@ -606,7 +655,29 @@ body {
     .form-discount {
         display: none;
     }
+
+    .block1 {
+        padding: 30px 30px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -120px;
+        display: flex;
+    }
+
+    .discount-block {
+        width: 90%;
+        display: inline;
+        flex-direction: column;
+    }
+
+    .cacl {
+        width: 90%;
+    }
+
+    .d-item {
+        margin: 25px 70px;
 }
+
 
 @media screen and (min-width:100px) and (max-width:1210px) {
     .logo {

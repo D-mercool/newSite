@@ -10,6 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=cyrillic-ext"
         rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style.css">
 
     <style type="text/css">
@@ -201,16 +202,27 @@
             <div class='discount-block'>
                 <div class='block1'>
                     <div class='list'>
-                        <div class='d-item'><span class='title'>01</span><div class='text'><h3>Бесплатный</h3><span>дизайн проект</span></div></div>
-                        <div class='d-item'><span class='title'>02</span><div class='text'><h3>Точный расчет</h3><span>стоимости блоков</span></div></div>
-                        <div class='d-item'><span class='title'>03</span><div class='text'><h3>Бесплатный подбор</h3><span>материалов под ваш бюджет</span></div></div>
-                        <div class='d-item'><span class='title'>04</span><div class='text'><h3>Точные сроки</h3><span>изготовления и доставки</span></div></div>
+                        <div class='d-item'><span class='title'><p>01</p></span><div class='text'><h3>Бесплатный</h3><span>дизайн проект</span></div></div>
+                        <div class='d-item'><span class='title'><p>02</p></span><div class='text'><h3>Точный расчет</h3><span>стоимости блоков</span></div></div>
+                        <div class='d-item'><span class='title'><p>03</p></span><div class='text'><h3>Бесплатный подбор</h3><span>материалов под ваш бюджет</span></div></div>
+                        <div class='d-item'><span class='title'><p>04</p></span><div class='text'><h3>Точные сроки</h3><span>изготовления и доставки</span></div></div>
                     </div>
                 </div>
 
-                <div class='block2'>
-                    <div class='block-2-head'><h2>ПРОГРАММА СКИДОК</h2></div>
-                    <div class='block-2-body'><p>До 15% на все кованые изделия</p></div>
+                <div class='calc'>
+                    <div class='block-2-head'><h2>Калькулятор</h2></div>
+                    <div class='calc-form'>
+                        <input type="text" placeholder="Кол-во" maxlength="10" pattern="^[ 0-9]+$"><br>
+                        <input type="text" placeholder="Цена" disabled="disabled"><br>
+                        <select name="select" size="1">
+                            <option selected value="s1">Чебурашка</option>
+                            <option value="s2">Крокодил Гена</option>
+                            <option value="s3">Шапокляк</option>
+                            <option value="s4">Крыса Лариса</option>
+                        </select>
+                        <input type='text' value='Стоимость: 20000&#8399;' disabled="disabled">
+
+                    </div>
                 </div>
 
             </div>
