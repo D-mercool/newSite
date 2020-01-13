@@ -54,4 +54,48 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    //Кнопки для Доставки
+
+    let arrow1 = document.querySelector('.btn-arrow1');
+    let arrow2 = document.querySelector('.btn-arrow2');
+    let liArrow1 = document.getElementsByClassName('li-arrow1');
+    let liArrow2 = document.getElementsByClassName('li-arrow2');
+    let tb = document.querySelector('.car');
+    let dText = document.querySelector('.delivery-text');
+    let count1 = 1;
+    let count2 = 1;
+
+    tb.style.display = 'none';
+    dText.style.display = 'none';
+
+    arrow1.addEventListener('click', function() {
+        if (count1 % 2 == 0) {
+            tb.style.display = 'none';
+            arrow1.getElementsByTagName('img')[0].setAttribute('src', 'img/arrow-down.svg');
+            liArrow1[0].classList.remove('li-arrow-cl');
+            count1 += 1;
+        }
+        else {
+            tb.style.display = 'table';
+            arrow1.getElementsByTagName('img')[0].setAttribute('src', 'img/arrow-up.svg');
+            liArrow1[0].classList.add('li-arrow-cl');
+            count1 += 1;
+        }
+    });
+
+    arrow2.addEventListener('click', function() {
+        if (count2 % 2 == 0) {
+            dText.style.display = 'none';
+            arrow2.getElementsByTagName('img')[0].setAttribute('src', 'img/arrow-down.svg');
+            liArrow2[0].classList.remove('li-arrow-cl');
+            count2 += 1;
+        }
+        else {
+            dText.style.display = 'block';
+            arrow2.getElementsByTagName('img')[0].setAttribute('src', 'img/arrow-up.svg');
+            liArrow2[0].classList.add('li-arrow-cl');
+            count2 += 1;
+        }
+    });
+
 });
