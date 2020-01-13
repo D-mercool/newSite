@@ -56,17 +56,28 @@ window.addEventListener('DOMContentLoaded', function () {
 
     //Кнопки для Доставки
 
-    let arrow1 = document.querySelector('.btn-arrow1');
-    let arrow2 = document.querySelector('.btn-arrow2');
-    let liArrow1 = document.getElementsByClassName('li-arrow1');
-    let liArrow2 = document.getElementsByClassName('li-arrow2');
-    let tb = document.querySelector('.car');
-    let dText = document.querySelector('.delivery-text');
-    let count1 = 1;
-    let count2 = 1;
+    let arrow1 = document.querySelector('.btn-arrow1'),
+    arrow2 = document.querySelector('.btn-arrow2'),
+    arrow1_960px = document.querySelector('.btn-arrow1-960px'),
+    arrow2_960px = document.querySelector('.btn-arrow2-960px'),
+    liArrow1 = document.getElementsByClassName('li-arrow1'),
+    liArrow2 = document.getElementsByClassName('li-arrow2'),
+    liArrow1_960px = document.getElementsByClassName('li-arrow1-960px'),
+    liArrow2_960px = document.getElementsByClassName('li-arrow2-960px'),
+    tb = document.querySelector('.car'),
+    dText = document.querySelector('.delivery-text'),
+    tb_960px = document.querySelector('.car-960px'),
+    dText_960x = document.querySelector('.delivery-text-960px'),
+    count1 = 1,
+    count2 = 1,
+    count1_960px = 1,
+    count2_960px = 1;
 
     tb.style.display = 'none';
     dText.style.display = 'none';
+    
+    tb_960px.style.display = 'none';
+    dText_960x.style.display = 'none';
 
     arrow1.addEventListener('click', function() {
         if (count1 % 2 == 0) {
@@ -98,4 +109,42 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    arrow1_960px.addEventListener('click', function() {
+        if (count1_960px % 2 == 0) {
+            tb_960px.style.display = 'none';
+            arrow1_960px.getElementsByTagName('img')[0].setAttribute('src', 'img/arrow-down.svg');
+            liArrow1_960px[0].classList.remove('li-arrow-cl');
+            count1_960px += 1;
+        }
+        else {
+            tb_960px.style.display = 'table';
+            arrow1_960px.getElementsByTagName('img')[0].setAttribute('src', 'img/arrow-up.svg');
+            liArrow1_960px[0].classList.add('li-arrow-cl');
+            count1_960px += 1;
+        }
+    });
+
+    arrow2_960px.addEventListener('click', function() {
+        if (count2_960px % 2 == 0) {
+            dText_960x.style.display = 'none';
+            arrow2_960px.getElementsByTagName('img')[0].setAttribute('src', 'img/arrow-down.svg');
+            liArrow2_960px[0].classList.remove('li-arrow-cl');
+            count2_960px += 1;
+        }
+        else {
+            dText_960x.style.display = 'block';
+            arrow2_960px.getElementsByTagName('img')[0].setAttribute('src', 'img/arrow-up.svg');
+            liArrow2_960px[0].classList.add('li-arrow-cl');
+            count2_960px += 1;
+        }
+    });
+
+    ////////////////////////////////
+
+    let btnTop = document.querySelector('.btn-gotop');
+    btnTop.onclick = function() {
+        window.scrollTo(pageXOffset, 0);
+    };
+
+    /////////////////////////////////////
 });
