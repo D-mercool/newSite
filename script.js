@@ -147,4 +147,65 @@ window.addEventListener('DOMContentLoaded', function () {
     };
 
     /////////////////////////////////////
+    //Калькулятор
+
+    let count = document.getElementsByClassName('input-calc')[0],
+        priceBlock = document.getElementsByClassName('input-calc')[1],
+        priceDelivery = document.getElementsByClassName('input-calc')[2],
+        block = document.querySelector('#select1'),
+        deliver = document.querySelector('#select2'),
+        totalValue = document.querySelector('.total'),
+        total = 0,
+        priceB = 0,
+        priceD = 0;
+
+        totalValue.value = '0 руб.';
+
+        count.addEventListener('input', function() {
+            if (priceBlock.value != '' && priceDelivery.value != '' && count.value != '') {
+                total = (+priceB * +count.value) + +priceD;
+                totalValue.value = total + ' руб.';
+            }
+            else {
+                totalValue.value = 0 + ' руб.'; 
+            }
+        });
+
+        block.addEventListener('change', function() {
+            priceBlock.value = this.options[this.selectedIndex].value + ' руб./шт.';
+            priceB = this.options[this.selectedIndex].value;
+            if (count.value == '' || priceDelivery.value == '' || count.value == '0' || priceD == '0') {
+                totalValue.value = 0 + ' руб.'; 
+            }
+            else if (this.options[this.selectedIndex].value == '0') {
+                priceBlock.value = '';
+                totalValue.value = 0 + ' руб.'; 
+            }
+            else {
+                total = (+priceB * +count.value) + +priceD;
+                totalValue.value = total + ' руб.';
+            }
+        });
+
+        deliver.addEventListener('change', function() {
+            priceDelivery.value = this.options[this.selectedIndex].value + ' руб.'; 
+            priceD = this.options[this.selectedIndex].value;
+            if (count.value == '' || priceBlock.value == '' || count.value == '0' || priceB == '0') {
+                totalValue.value = 0 + ' руб.'; 
+            }
+            else if (this.options[this.selectedIndex].value == '0') {
+                priceDelivery.value = '';
+                totalValue.value = 0 + ' руб.';
+            }
+            else {
+                total = (+priceB * +count.value) + +priceD;
+                totalValue.value = total + ' руб.';
+            }
+        });
+
+        /////////////////////////////////////////////
+        //Модальное окно
+
+        let widget2 = document.querySelector('.widget2');
+        console.log(widget2);
 });

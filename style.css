@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url('robotoslablight.woff2') format('woff2'), url('robotoslablight.woff') format('woff'), url('robotoslablight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
 .fade {
     -webkit-animation-name: fade;
     animation-name: fade;
@@ -168,6 +175,16 @@ body {
     -moz-box-shadow: inset 0px -4px 0px 0px #c42a0c, 0px 6px 10px 0px rgba(231, 61, 24, 0.25);
     font-weight: bold;
     background: #e73d18;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: contrast(1.3);
+    transition: all 500ms ease;
+}
+
+.btn:active {
+    background: #c42a0c;
 }
 
 .widget1 {
@@ -201,9 +218,10 @@ body {
     display: inline-flex;
     position: relative;
     color: white;
-    width: 100%;
+    width: 80%;
     height: auto;
     bottom: -70px;
+    margin: 0 auto;
 }
 
 .advantages li {
@@ -215,16 +233,6 @@ body {
     margin: 0 auto 0 auto;
     /* Поля вокруг текста */
 }
-
-.advantages li:nth-child(2) {
-    margin-left: 5%;
-}
-
-.advantages li:nth-child(3) {
-    margin-left: 5%;
-    margin-right: 20%;
-}
-
 
 .advantages-li {
     display: inline-flex;
@@ -239,7 +247,9 @@ body {
 .form-discount {
     padding: 50px 50px 50px 50px;
     margin: -370px auto;
-    position: relative;
+    position: fixed;
+    left: 40%;
+    top: 65%;
     box-sizing: border-box;
     width: 390px;
     height: 470px;
@@ -247,7 +257,8 @@ body {
     background: #031721;
     border-radius: 10px;
     text-align: center;
-    display: inline-block;
+    z-index: 1;
+    display: none;
 }
 
 .advantages-li p {
@@ -312,7 +323,6 @@ body {
 }
 
 .form-discount h2 {
-    display: flex;
     font-size: 26px;
     font-family: Times New Roman, Times, serif;
     color: #fff;
@@ -330,6 +340,21 @@ body {
     color: rgba(255, 255, 255, 0.5);
     line-height: 1.4;
     margin-top: 10px
+}
+
+.form-close {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+
+.form-close:hover{
+    filter: brightness(2);
 }
 
 .form-discount form input {
@@ -569,18 +594,17 @@ body {
 }
 
 .text span {
-    margin: 0 24px;
     font-family: Roboto, sans-serif;
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
     font-weight: normal;
+    margin: 0 20px;
 }
 
 .calc {
     position: relative;
     text-align: left;
-    width: auto;
-    max-width: 100%;
+    width: 400px;
     box-sizing: border-box;
     display: inline-block;
     margin: 0 auto;
@@ -603,7 +627,7 @@ body {
 .calc-form {
     display: flex;
     flex-direction: column;
-    width: auto;
+    width: 100%;
     margin: -20px auto;
 }
 
@@ -641,7 +665,7 @@ body {
 }
 
 .calc-form select {
-    font-size: 22px;
+    font-size: 24px;
     color: #fff;
     background: #041c29;
     margin-bottom: 20px;
@@ -649,6 +673,14 @@ body {
     width: 90%;
     margin-top:10px;
     font-family: 'PT Sans', serif;
+}
+
+.calc-form option {
+    font-size: 20px;
+}
+
+.calc-form optgroup {
+    font-size: 20px;
 }
 
 .work-wrap {
@@ -1254,14 +1286,17 @@ body {
 }
 
 .btn-gotop:hover {
-    opacity: 0.7;
+    filter: contrast(1.3);
+    transition: all 500ms ease;
 }
+
 
 @media (max-width: 640px) {
     .item {
         display: block;
         width: 100%;
     }
+
 }
 
 @media screen and (min-width:640px) and (max-width:960px) {
@@ -1321,8 +1356,31 @@ body {
         flex-direction: column;
     }
 
+    .advantages ul {
+        display: inline;
+        width: 100%;
+    }
+
+    .advantages ul li {
+        width: 40%;
+        margin: 0 auto;
+        margin-left: 5%;
+    }
+
+    .advantages ul li:nth-child(3){
+        margin-left: 25%;
+    }
+
     .cacl {
         width: 90%;
+    }
+
+    .calc-form option {
+        font-size: 12px;
+    }
+    
+    .calc-form optgroup {
+        font-size: 12px;
     }
 
     .d-item {
