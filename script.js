@@ -206,6 +206,25 @@ window.addEventListener('DOMContentLoaded', function () {
         /////////////////////////////////////////////
         //Модальное окно
 
-        let widget2 = document.querySelector('.widget2');
-        console.log(widget2);
+        let message = { //Объект со статусами запроса
+            loading: 'Загрузка...',
+            success: 'Спасибо! Скоро мы с вами свяжемся',
+            failure: 'Что-то пошло не так...'
+        };
+        let widget2 = document.querySelector('.widget2'),
+            widgetClose = document.querySelector('.form-close'),
+            overlay = document.querySelector('.overlay');
+        let form = document.querySelector('.form-discount');
+
+        widget2.addEventListener('click', function() {
+            form.style.display = 'block';
+            overlay.style.display = 'block';
+            document.body.style.overflow = 'hidden'; //ЗАпретили прокрутку страницы когда открыто модальное окно
+        });
+
+        widgetClose.addEventListener('click', function() {
+            form.style.display = 'none';
+            overlay.style.display = 'none';
+            document.body.style.overflow = '';
+        });
 });
