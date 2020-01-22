@@ -1,0 +1,21 @@
+<svg width="580" height="580" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG Editor - http://github.com/mzalive/SVG Editor/ -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="582" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#ffffff" transform="rotate(6 298.00778198242176,174.04266357421852) " id="svg_41" d="m32.844891,174.946783l113.566592,-140.97159l303.097622,0l113.661581,140.067479l-113.661581,140.06748l-303.097622,0l-113.566592,-139.163369z" stroke-width="22.5" fill="none"/>
+  <line stroke="#ffffff" stroke-linecap="null" stroke-linejoin="null" id="svg_50" y2="315.825136" x2="37.41305" y1="145.892051" x1="31.49999" fill-opacity="null" stroke-opacity="null" stroke-width="22.5" fill="none"/>
+  <line stroke="#ffffff" stroke-linecap="null" stroke-linejoin="null" id="svg_52" y2="506.947321" x2="139.568263" y1="289.321226" x1="133.655203" fill-opacity="null" stroke-opacity="null" stroke-width="22.5" fill="none"/>
+  <line stroke="#ffffff" stroke-linecap="null" stroke-linejoin="null" id="svg_53" y2="506.387837" x2="133.840191" y1="310.230586" x1="36.777477" fill-opacity="null" stroke-opacity="null" stroke-width="22.5" fill="none"/>
+  <line stroke="#ffffff" stroke-linecap="null" stroke-linejoin="null" id="svg_56" y2="543.801108" x2="435.591267" y1="329.811376" x1="429.678207" fill-opacity="null" stroke-opacity="null" stroke-width="22.5" fill="none"/>
+  <line stroke="#ffffff" stroke-linecap="null" stroke-linejoin="null" id="svg_57" y2="537.297467" x2="443.869552" y1="500.44368" x1="124.564294" fill-opacity="null" stroke-opacity="null" stroke-width="22.5" fill="none"/>
+  <line stroke="#ffffff" stroke-linecap="null" stroke-linejoin="null" id="svg_59" y2="359.252436" x2="570.409049" y1="541.143703" x1="434.046601" fill-opacity="null" stroke-opacity="null" stroke-width="22.5" fill="none"/>
+  <line stroke="#ffffff" stroke-linecap="null" stroke-linejoin="null" id="svg_60" y2="365.756072" x2="570.771091" y1="203.93494" x1="564.858031" fill-opacity="null" stroke-opacity="null" stroke-width="22.5" fill="none"/>
+ </g>
+</svg>
