@@ -174,11 +174,7 @@ window.addEventListener('DOMContentLoaded', function () {
         block.addEventListener('change', function() {
             priceBlock.value = this.options[this.selectedIndex].value + ' руб./шт.';
             priceB = this.options[this.selectedIndex].value;
-            if (count.value == '' || priceDelivery.value == '' || count.value == '0' || priceD == '0') {
-                totalValue.value = 0 + ' руб.'; 
-            }
-            else if (this.options[this.selectedIndex].value == '0') {
-                priceBlock.value = '';
+            if (count.value == '' || priceDelivery.value == '' || count.value == '0') {
                 totalValue.value = 0 + ' руб.'; 
             }
             else {
@@ -192,10 +188,6 @@ window.addEventListener('DOMContentLoaded', function () {
             priceD = this.options[this.selectedIndex].value;
             if (count.value == '' || priceBlock.value == '' || count.value == '0' || priceB == '0') {
                 totalValue.value = 0 + ' руб.'; 
-            }
-            else if (this.options[this.selectedIndex].value == '0') {
-                priceDelivery.value = '';
-                totalValue.value = 0 + ' руб.';
             }
             else {
                 total = (+priceB * +count.value) + +priceD;
